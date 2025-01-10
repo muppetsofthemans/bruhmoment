@@ -108,7 +108,7 @@ if not getgenv().StingrayLoaded then
     local X, Y = MouseTarget.AbsolutePosition.X, MouseTarget.AbsolutePosition.Y
 
     -- UI --
-    local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Manta/Stingray/refs/heads/main/UI"))()
+    local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/muppetsofthemans/bruhmoment/refs/heads/main/betdat"))()
     local MainUI = UI.InitUI()
 
     local Toggle = "ON"

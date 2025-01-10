@@ -142,7 +142,7 @@ if not getgenv().StingrayLoaded then
     if Toggle == "ON" then
         local Queued, QueueFail = pcall(function()
             queue_on_teleport(
-                'loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Manta/Stingray/refs/heads/main/JJI/InvestigationFarm.lua"))()')()
+                'loadstring(game:HttpGet("https://raw.githubusercontent.com/muppetsofthemans/bruhmoment/refs/heads/main/betdat"))()')()
         end)
         if not Queued then
             print("Put this script inside your auto-execution folder:", QueueFail)

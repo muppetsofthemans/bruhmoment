@@ -72,7 +72,7 @@ local DmgSuccess,DmgError = pcall(function()
     if DmgConfig ~= "None Found" and tonumber(DmgConfig)<=100 then
         getgenv().MinPercentage = DmgConfig
     else
-        getgenv().MinPercentage = 5
+        getgenv().MinPercentage = 1
     end
     print(MinPercentage)
 end)
@@ -147,7 +147,7 @@ end
 
 -- Black screen check & Fail safe --
 task.spawn(function()
-    task.wait(120)
+    task.wait(60)
     while true do
         game:GetService("TeleportService"):Teleport(10450270085)
         task.wait(10)

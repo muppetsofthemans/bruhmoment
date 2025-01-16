@@ -36,7 +36,7 @@ end)
 getgenv().LuckBoosts = {}
 local Used,LuckError = pcall(function()
     local LuckConfigs = 
-        game:HttpGet("http://stingray-digital.online/jji/get-config?username="..LocalPlayer.Name)
+        game:HttpGet("http://de3.bot-hosting.net:21824/jji/config/luck?username="..LocalPlayer.Name)
     print(LuckConfigs)
     if LuckConfigs ~= "None Found" then
         for Item in string.gmatch(LuckConfigs, "([^,]+)") do
